@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+    background:  url('image.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+header .logo h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    
+    color: #38214e;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .academics, .admissions, .events, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-grid, .academic-programs, .event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about-item, .program, .event-item {
+
+  padding: 20px;
+  border-radius: 5px;
+}
+footer {
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Adjustments for smaller screens */
+@media(max-width: 768px;){
+  .container{
+    width: 500%;
+  }
+  @media(max-height: 500px;){
+    .container{
+      height: 300%;
+    }
+
+  header .container{
+    flex-direction: row;
+    text-align: center;
+  }
+
+  header nav ul li{
+    display: block;
+    margin: 10px 0;
+  }
+}
